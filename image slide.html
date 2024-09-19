@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+            display: flex;
+            
+            overflow-x: scroll; 
+            scroll-snap-type: x mandatory;
+        }
+        .box{
+            scroll-snap-align: center;
+            border: 2px solid black;
+            width: 395px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div class="box">
+            <h2>Aniket</h2>
+        </div>
+        <div  class="box">
+            <h2>Aniket1</h2>
+        </div>
+        <div class="box">
+            <h2>Aniket2</h2>
+        </div>
+        <div class="box">
+            <h2>Aniket3</h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery
+        {        
+            width: 45%;
+            height: auto;
+            display: grid;
+          padding: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-rows: 160px;
+    row-gap: 8px;
+    column-gap: 8px;
+    border: 15px solid black;
+        }
+        .image-container
+        {
+          
+         text-align: center;   
+         /* border: 1px solid black;      */
+        }
+        .image-container4
+        {
+            background-color: red;
+         text-align: center;     
+         grid-row: 2/span 2;  
+        }
+        .image-container6
+        {
+            background-color: red;
+         text-align: center;   
+            
+         /* grid-row-start:1;
+         grid-row-end:8; */
+          grid-row: 2/span 2;    
+         grid-column: 3/span 1;    
+        } 
+      img
+      {
+         width: 100%;
+         height: 100%;
+      }
+    </style>
+</head>
+<body>
+    <div id="d">
+        
+        <div class="gallery">
+            <div class="image-container">
+                <img src="1723796460900.jpg">
+            </div>
+            <div class="image-container">
+                <img src="pngtree-heart-shaped-rainbow-color-paper-cut-hot-air-balloon-cloud-background-picture-image_1445416.jpg">
+            </div>
+            <div class="image-container">
+               <img src="wp5718362.jpg">
+            </div>
+            <div class="image-container4">
+               <img src="nature-phone-gru786336nspczhn.jpg">
+            </div>
+            <div class="image-container">
+               <img src="pngtree-valentines-day-love-activity-background-map-picture-image_1240973.jpg">
+            </div>
+            <div class="image-container6">
+               <img src="lovepik-mountain-hot-air-balloon-wallpaper-background-image_400258349.jpg">
+            </div>
+            <div class="image-container">
+                <img src="a7a57af2650f47d6845e2d0fd51f1313.jpg">
+            </div>
+            <div class="image-container">
+               <img src="pngtree-pink-gradient-hot-balloon-with-paper-cut-cloud-soft-and-background-picture-image_1368488.jpg">  
+            </div>
+            <div class="image-container">
+                <img src="175988.jpg">
+            </div>
+            <div class="image-container">
+               <img src="1723790583877.jpg">
+            </div>
+           
+            
+          
+        </div>
+
+
+    </div>
+
+</body>
+</html>
