@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            counter-reset: ani 0;           
+        }
+        h1::before
+        {
+            content: counter(ani,upper-roman) "." " "; 
+            counter-increment: ani 1;
+padding: 0px;
+           
+        }
+        h1
+        {
+            counter-reset: anik;
+            padding: 0px;
+        }
+        /* .a
+        {
+            counter-reset: anike;
+            content: counter(anike);
+        } */
+        .a::before
+        {
+            content: counter(anik,upper-alpha) "." " ";
+            counter-increment: anik;
+        }
+        /* p::before
+        {
+            content: counter(anike,lower-roman)"." " ";
+            counter-increment: 1;
+        } */
+    </style>
+</head>
+<body>
+  <h1>Background Skills</h1>
+            <h3 class="a">Unix Cammand</h3>
+            <h3 class="a">Vim Text Editor</h3>
+  <h1>HTML</h1>
+    <h3 class="a">Minimal Page </h3>
+    <h3 class="a">Heading</h3>
+    <h3 class="a">Tags</h3>
+    <h3 class="a">Lists</h3>
+    <!-- <p>Unordres</p>
+    <p>Ordereds</p>
+    <p>Defination</p>
+    <p>Nested</p> -->
+</body>
+</html>
