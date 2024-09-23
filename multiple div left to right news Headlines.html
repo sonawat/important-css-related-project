@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <style>
+        *{box-sizing: border-box;}
+        .wrapper{
+            width: 90%;
+            height: 105px;
+            /* border: 1px solid black; */
+            position: relative;
+            margin-left: 5%;
+            overflow: hidden;
+            border: 4px solid black;
+            background-color: red;
+        }
+        .box{
+         text-align: center;
+         text-decoration: underline;
+         font-size: 25px;
+            left: calc(1000px * 8);
+            color: aliceblue;
+            width: 1000px;
+            height: 75px;
+            /* border: 2px solid black; */
+            /* background-color: red; */
+            border-radius: 10px;
+            position: absolute;
+            animation: scrolling 60s linear infinite;
+        }
+        @keyframes scrolling {
+            to{left: -1000px;}
+        }
+        .b1{animation-delay:calc(30s / 8* (8 - 1) * -1);}
+        .b2{animation-delay:calc(30s / 8* (8 - 2) * -1);}
+        .b3{animation-delay:calc(30s / 8* (8 - 3) * -1);}
+        .b4{animation-delay:calc(30s / 8* (8 - 4) * -1);}
+        .b5{animation-delay:calc(30s / 8* (8 - 5) * -1);}
+        .b6{animation-delay:calc(30s / 8* (8 - 6) * -1);}
+        .b7{animation-delay:calc(30s / 8* (8 - 7) * -1);}
+        .b8{animation-delay:calc(30s / 8* (8 - 8) * -1);}
+        
+        /* h3:not(.a,.b){
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box b1">
+            <h3>Sri Lanka's new President Dissanayake pledges to clean public life</h3>
+        </div>
+        <div class="box b2">
+            <h3>Bikaji Foods Int'l share hits record high on incorporating unit; details</h3>
+        </div>
+        <div class="box b3">
+          <h3 class="a">xJSW Infra rises 5% on receiving delivery of 2nd dredger from Netherlands</h3>
+        </div>
+        <div class="box b4">
+            <h3 class="b">16 civilians injured in Russian attack on Ukraine's Zaporizhzhia: Officials</h3>
+        </div>
+        <div class="box b5">
+            <h3>
+                Watching, storing child pornography offence under Pocso Act: Supreme Court
+            </h3>
+        </div>
+        <div class="box b6">
+            <h3>
+                Erling Haaland equals Ronaldo's record of 100 goals in fewest club games
+            </h3>
+        </div>
+        <div class="box b7">
+            <h3>
+                Citigroup's China expansion plans face delays over pending US Fed clearance
+            </h3>
+        </div>
+       
+    </div>
+</body>
+</html>
