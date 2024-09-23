@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nikita.css"/>
+    <title>Input Devices</title>
+    <script>
+        const toggleMenu = () => {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('visible');
+        }
+
+        const closeMenu = () => {
+            const menu = document.getElementById('menu');
+            menu.classList.remove('visible'); // Hide the menu
+        }
+    </script>
+    <style>
+        .menu {
+            display: none; /* Hidden by default */
+            width: 180px; /* Width of the menu */
+            background-color: white; /* Background color of the menu */
+            position: absolute; /* Position it on the left */
+            left: 0;
+            top: 0;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease; /* Smooth transition */
+            background-image: url('images/1723796460859.jpg');
+            background-size: cover; /* Ensures the background image covers the entire div */
+     /* background-position: center;  */
+    /* background-repeat: no-repeat; */
+ 
+        }
+        .menu.visible {
+            display: block; /* Show the menu when visible class is added */
+        }
+        .dotb {
+            cursor: pointer; /* Change cursor on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="dot">
+        <div><h2 class="inph2" style="color: aliceblue;">Input Device</h2></div>
+        <div class="dota"><label for="img1">Mouse</label></div>
+        <div class="dota"><label for="img2">Joy-Sticks</label></div>
+        <div class="dota"><label for="img3">Scanner</label></div>
+        <div class="dota"><label for="img4">Monitor</label></div>
+        <div class="dota"><label for="img5">Printers</label></div>
+        <div class="dotb" onclick="toggleMenu()">
+        <h1 style="color: aliceblue;">☰</h1></div>
+    </div>
+    
+    <div id="menu" class="menu">
+        <h2 style="background-color: red;color: aliceblue;padding: 5px;">Menu</h2>
+        <ul>
+         
+            <label for="img1"><li>1. Mouse</label></li></label>
+            <label for="img2"><li>2. Joy-Sticks</label></li></label>
+            <label for="img3"><li>3. Scanner</label></li></label>
+            <label for="img4"><li>4. Monitor</label></li></label>
+            <label for="img5"><li>5. Printers</label></li></label>
+        </ul>
+        <button class="closeb" onclick="closeMenu()">Close Menu</button> <!-- Close button -->
+    </div>
+
+    <div class="main">
+        <div class="a">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+            <input type="radio" name="slide" id="img5">
+
+            <!-- Content boxes -->
+            <div class="box b1">
+                <h1>Mouse</h1>
+                <img src="https://media.istockphoto.com/id/1458492520/photo/black-wireless-computer-mouse-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=hLFS1ukv567H6S-7NjQzvVxNKb7qPkvIKbXkT7Sd2r8=">
+                <p>
+                    The first mouse was invented in 1964 by Douglas Engelbart, a computer scientist at the Stanford
+                    Research
+                    Institute. Engelbart's mouse was a wooden box with two wheels on the bottom and two buttons on top.
+                    It
+                    was connected to a computer by a wire.
+        
+                    The mouse was not widely adopted until the early 1980s when Apple Computer introduced the Macintosh
+                    computer with a mouse as its standard input device. The Macintosh was the first computer to use a
+                    GUI,
+                    and the mouse was essential for navigation.
+        
+                    There are two main types of mice: wired and wireless. Wired mice are connected to the computer by a
+                    cable, while wireless mice use radio waves to communicate with the computer.
+        
+                    Wired mice are more reliable than wireless mice, but they can be more difficult to use with laptops
+                    and
+                    other portable devices. Wireless mice are more convenient than wired mice. But they can be more
+                    expensive, and they may have a shorter battery life.
+        
+                    There are also a variety of other types of mice, including the following:
+                    </p>    
+            </div>
+            <div class="box b2">
+                <h1>Joy-Stics</h1>
+                <img src="https://javatpoint-images.s3.eu-north-1.amazonaws.com/computer/images/what-is-a-joystick4.jpg">
+                <p>
+                    What are the different types of joysticks?
+                    There are various types of joysticks available, including analog joysticks, digital joysticks,
+                    flight
+                    sticks, and gamepad-style joysticks. Analog joysticks provide a smooth range of motion, while
+                    digital
+                    joysticks have predefined directions. Flight sticks are specifically designed for flight simulators,
+                    and
+                    gamepad-style joysticks resemble traditional game controllers with added joystick functionality.
+        
+                    How are joysticks used in gaming?
+                    In gaming, joysticks are used to control the movement of characters or vehicles within a game. They
+                    enable you to navigate through virtual environments, aim weapons, perform complex maneuvers, and
+                    interact with objects in the game world. Joysticks are popular in-flight simulators, racing games,
+                    and
+                    other genres that require precise control.
+        
+                    Can joysticks be used with consoles and personal computers (PCs)
+                    Yes, joysticks can be used with both consoles and PCs. Most modern gaming consoles, such as
+                    PlayStation
+                    and Xbox, have universal service bus (USB) ports that allow you to connect to a joystick directly.
+                     </p>    
+            </div>
+            <div class="box b3">
+                <h1>Scanner</h1>
+                <p>
+                    How does a scanner work?
+                    Scanners work by using a light source and a photosensitive sensor to capture the content of a
+                    document
+                    or image. 
+                    <br/>
+                    <img src="https://javatpoint-images.s3.eu-north-1.amazonaws.com/computer/images/what-is-scanner1.jpg"> 
+                    <br/>When you place the document on the scanning bed and initiate the scan, the light source
+                    illuminates the document, and the sensor captures the reflected light. The sensor then converts the
+                    light patterns into digital information, creating a digital representation of the scanned content.
+        
+                    What types of scanners are there?
+                    There are various types of scanners available, each designed for specific purposes. The most common
+                    types include flatbed scanners, sheet-fed scanners, portable scanners, and three-dimensional (3D)
+                    scanners. Flatbed scanners have a flat glass bed where you place the document or image, while
+                    sheet-fed
+                    scanners are designed to handle multiple documents in a stack. Portable scanners are compact and can
+                    be
+                    easily carried around, and 3D scanners are used to create digital models of three-dimensional
+                    objects.
+        
+                    What are the advantages of using a scanner?
+                    Using a scanner offers several advantages. First, it allows you to create digital copies of
+                    important
+                    documents, preserving them in a more secure and easily accessible format. Scanning also enables you
+                    to
+                    share documents electronically, reducing the need for physical copies and the associated costs.
+                    Additionally, scanners make it possible to edit and enhance scanned images, improving their quality
+                    and
+                    making them more versatile.
+                </p>    
+            </div>
+            <div class="box b4">
+                <h1>Monitor</h1>
+                <p>The monitor is an output device that displays the output in
+                     the form of images on a digital screen. The images formed
+                     are made up of millions of tiny dots called pixels. The 
+                     more pixels, the better resolution of the image is.</p>
+                <br/>
+                <img src="https://4.imimg.com/data4/JX/OT/MY-29523429/desktop-monitor.jpg">
+                <br/>
+                <p>Earlier monitors had screens made of CRT, but are now replaced
+                     by flat panel displays. Let us understand how both are
+                      different from each other-
+                    <br/><br/>
+                   <strong style="color: blue;">CRT</strong>– The CRT 
+                   or cathode ray tube is the structure behind the screen. 
+                   That helps to display characters and images on the monitor. 
+                   the display side consists of a phosphorescent screen. 
+                   The screen lights up when a beam of electrons hits the 
+                   screen from the cathode filament. The electrons are deflected
+                    and accelerated and that is how the images are formed on the 
+                    screen.</p>
+            </div>
+            <div class="box b5">
+                <h1>Printers</h1>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/030/492/958/small_2x/printer-on-a-white-background-3d-rendering-computer-digital-image-ai-generated-free-photo.jpg">
+                   <p>Printers are another peripheral device used as output devices.
+                        The output from the computer is achieved on paper from the 
+                        printer. The data gets printed on paper which can be both 
+                        colored or black and white, an image, text, or even both.
+        
+                       The printer can be majorly divided into two types-
+                       <br/>
+                       Impact printers – These printers work by having direct 
+                       contact with the ink ribbon and paper. Due to this, the noise
+                        produced by these printers resembles that of a typewriter.<br/>
+                       Non-Impact printers – These printers work with technologies
+                        like inkjet, laser, electrostatic, xerographic, etc. These 
+                        printers work silently and are much faster than the impact 
+                        ones.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
