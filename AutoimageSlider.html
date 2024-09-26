@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        .container{
+            width: 50%;
+            height: 520px;
+            position: absolute;
+            /* transform: translate(-50%,-50%); */
+            top: 10%;
+            left: 7%;
+            overflow: hidden;
+         border:5px solid black;
+         box-shadow: 0px 0px 3px 3px black;
+        }
+        .wrapper img{        
+            width: 100%;
+            height: 100%;
+        
+        }
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            animation: Slider 12s linear infinite alternate;
+        }
+
+        @keyframes Slider 
+        {
+        0%{
+            transform: translate(0);
+        }
+        25%{transform: translate(-100%);}    
+        50%{transform: translate(-200%);}    
+        75%{transform: translate(-300%);}    
+        100%{transform: translate(-400%);}    
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src="images/1723796460888.jpg" alt="">
+            <img src="images/1723790583877.jpg" alt="">
+            <img src="images/1723796460900.jpg" alt="">
+            <img src="images/pngtree-heart-shaped-rainbow-color-paper-cut-hot-air-balloon-cloud-background-picture-image_1445416.jpg" alt="">
+            <img src="images/pngtree-pink-gradient-hot-balloon-with-paper-cut-cloud-soft-and-background-picture-image_1368488.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
