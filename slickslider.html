@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      .manufacturer-list .manufacturer-card {
+        width: 180px;
+        padding: 15px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      .manufacturer-list .manufacturer-image {
+        width: 100%;
+        height: 110px;
+        border-radius: 12px;
+      }
+
+      .manufacturer-list .manufacturer-card p {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+      }
+
+      /* FIX slick default dot styles */
+      .slick-dots {
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+        right: 0;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .slick-dots li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0; /* remove default text */
+        line-height: 0; /* remove default gap */
+        /* background: #d1d5db; */
+        background: #e6d0e6;
+
+        border: none;
+      }
+
+      .slick-dots li button:before {
+        content: ""; /* remove slick default dot */
+      }
+
+      .slick-dots li.slick-active button {
+        /* background: #374151; */
+        background: #ff6f00;
+        width: 12px;
+        height: 12px;
+      }
+
+      /* REMOVE slick default spacing */
+
+      /* Fix wrapper width */
+      .manufacturer-list > div {
+        max-width: 1180px !important;
+        margin: auto;
+      }
+      .manufacturer-card {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br /><br /><br />
+    <!-- <div class="manufacturer-slider"> -->
+    <div class="manufacturer-list">
+      <div>
+        <div class="manufacturer-card">
+          <div
+            class="manufacturer-image"
+            style="
+              background: url(https://discountmanufacturedhomes.com/wp-content/uploads/sites/127/2025/11/025-champion-warehouse-sazerac-primary-bathroom2-1.jpg)
+                center/cover;
+            "
+          ></div>
+          <p>Champion Homes 1</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="manufacturer-card">
+          <div
+            class="manufacturer-image"
+            style="
+              background: url(https://discountmanufacturedhomes.com/wp-content/uploads/sites/127/2025/11/025-champion-warehouse-sazerac-primary-bathroom2-1.jpg)
+                center/cover;
+            "
+          ></div>
+          <p>Skyline Homes 2</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="manufacturer-card">
+          <div
+            class="manufacturer-image"
+            style="
+              background: url(https://discountmanufacturedhomes.com/wp-content/uploads/sites/127/2025/11/025-champion-warehouse-sazerac-primary-bathroom2-1.jpg)
+                center/cover;
+            "
+          ></div>
+          <p>Skyline Homes 3</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="manufacturer-card">
+          <div
+            class="manufacturer-image"
+            style="
+              background: url(https://discountmanufacturedhomes.com/wp-content/uploads/sites/127/2025/11/025-champion-warehouse-sazerac-primary-bathroom2-1.jpg)
+                center/cover;
+            "
+          ></div>
+          <p>Skyline Homes 4</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".manufacturer-list").slick({
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        // centerMode: true,
+        // centerPadding: "0px",
+
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+            },
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
